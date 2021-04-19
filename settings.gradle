@@ -4,6 +4,13 @@
 
 import org.yaml.snakeyaml.Yaml
 
+pluginManagement {
+  repositories {
+      mavenLocal()
+      gradlePluginPortal()
+  }
+}
+
 buildscript {
     repositories {
         if (hasProperty("centralRepo")) {

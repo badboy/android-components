@@ -39,6 +39,7 @@ plugins {
 
 allprojects {
     repositories {
+        mavenLocal()
         if (project.hasProperty("googleRepo")) {
             maven {
                 name "Google"
